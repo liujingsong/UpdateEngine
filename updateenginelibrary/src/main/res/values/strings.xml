@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UpdateEngineLibrary</string>
+    <string name="update_pd_title">更新</string>
+    <string name="update_pd_message">正在下载...</string>
+    <string name="update_pd_progress">"已下载  "</string>
+    <string name="update_patch">正在生成APK... </string>
+    <string name="update_wait">请稍等...</string>
+    <string name="patch_done_install">打包完成，安装中...</string>
+</resources>
