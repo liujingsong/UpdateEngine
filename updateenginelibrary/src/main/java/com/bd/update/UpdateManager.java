@@ -127,6 +127,7 @@ public class UpdateManager {
         /*查找或备份旧的安装包到sd*/
         final File originOldApk = FileUtils.findOldApk(mContext);
         /*旧的安装包安全校验*/
+        Log.e("TEST_UPDATE", "oldMd5: "+isValid(update.getOld_md5(), FileUtils.getFileMD5(originOldApk)));
         if (isValid(update.getOld_md5(), FileUtils.getFileMD5(originOldApk))) {
             downloadPatch(update, originOldApk.getAbsolutePath());
         } else {

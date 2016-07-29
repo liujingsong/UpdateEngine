@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <android/log.h>
 
-JNIEXPORT jint JNICALL Java_com_bd_update_Patch_patcher(JNIEnv* env,
+JNIEXPORT jint JNICALL Java_com_bd_update_patch_Patch_patcher(JNIEnv* env,
 		jobject othis, jstring argv1, jstring argv2, jstring argv3) {
 	char ** argv;
 	int loopVar,result;
@@ -21,6 +21,7 @@ JNIEXPORT jint JNICALL Java_com_bd_update_Patch_patcher(JNIEnv* env,
 
 	result=bspatch(argv);
 
+	//Important:释放内存，防止内存泄露
 	(*env)->ReleaseStringUTFChars(env, argv1, argv[1]);
 	(*env)->ReleaseStringUTFChars(env, argv2, argv[2]);
 	(*env)->ReleaseStringUTFChars(env, argv3, argv[3]);

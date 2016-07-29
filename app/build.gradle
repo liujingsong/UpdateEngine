@@ -14,8 +14,8 @@ android {
 
     sourceSets {
         main {
-            jniLibs.srcDirs = ['src/libs', 'src/libs/armeabi','libs','libs/armeabi']
-//            jni.srcDirs = ['src/jni', 'src/main/jni/']
+            jniLibs.srcDirs = ['src/libs', 'src/libs/armeabi', 'libs', 'libs/armeabi']
+         //   jni.srcDirs = ['src/jni', 'src/main/jni/']
         }
     }
 

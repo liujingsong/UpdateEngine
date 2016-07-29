@@ -27,7 +27,7 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := Patcher
-LOCAL_SRC_FILES := Patcher.c 
+LOCAL_SRC_FILES := Patcher.c
 LOCAL_STATIC_LIBRARIES := bspatch
 LOCAL_LDLIBS :=  -llog#加入log
 

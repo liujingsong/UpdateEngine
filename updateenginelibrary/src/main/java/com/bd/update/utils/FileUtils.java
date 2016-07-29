@@ -44,6 +44,7 @@ public class FileUtils {
     public static File findOldApk(Context context) {
         String mRootPath = FileUtils.getExternalStorageDirectory();
         File oldApk = new File(mRootPath + File.separator + context.getPackageName() + ".apk");
+        Log.e("TEST_UPDATE", "oldApk exists: "+oldApk.exists());
         return oldApk.exists() ? oldApk : backupApk(context, oldApk);
     }
 

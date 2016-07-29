@@ -27,6 +27,6 @@ public class Patch {
      * @param newApk 新apk地址(名字)
      * @param patch  增量包地址
      */
-    public static native void patcher(String oldApk, String newApk, String patch);
+    public static native int patcher(String oldApk, String newApk, String patch);
 
 }
